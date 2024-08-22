@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="py-4 bg-gradient-to-r from-indigo-500 flex justify-around">
+            <li class="text-lg text-black font-bold border-2 p-2">Chandravan</li>
+            <li class="text-lg text-orange-600">Project</li>
+            <li class="text-lg text-blue-700 border-2  p-2 hover:bg-blue-950 transition-all duration-150 rounded-md">
+                <a href="https://www.linkedin.com/in/chandravan-kumar-86a143220/">LinkedIn</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="h-screen w-screen bg-slate-200 flex items-center justify-center">
+        <div class="bg-slate-700 w-11/12 md:w-1/2 lg:w-1/4 p-5 rounded-lg">
+            <h1 class="text-center text-3xl md:text-4xl p-4 bg-slate-600 rounded-md">
+                Guess the Number
+            </h1>
+            <p class="text-yellow-500 my-4 text-center">
+                Try and guess a random number between 1 and 100. You have 10 attempts to guess the right number.
+            </p>
+
+            <form class="flex flex-col items-center">
+                <label for="guessField" id="guess" class="text-xl">Guess a number</label>
+                <input type="text" id="guessField" class="m-3 p-3 border-2 border-black rounded-md w-full">
+                <input type="submit" id="subt" value="Submit guess" class="bg-slate-900 m-3 p-3 text-gray-600 w-full rounded-md">
+            </form>
+
+            <div class="resultParas flex flex-col items-center text-center">
+                <p class=" font-bold text-lg">Previous Guesses: <span class="guesses"></span></p>
+                <p class="font-bold text-lg">Guesses Remaining: <span class="lastResult">10</span></p>
+                <p class="lowOrHi text-xl text-red-700 font-bold"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
